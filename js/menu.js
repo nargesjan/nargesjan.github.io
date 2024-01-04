@@ -1,0 +1,1 @@
+"use strict";function fixedHeader(){$(window).scrollTop()>0?($(".menu").addClass("menu--active"),$(".mobile-menu").addClass("mobile-menu--scroll")):($(".menu").removeClass("menu--active"),$(".mobile-menu").removeClass("mobile-menu--scroll"))}fixedHeader(),$(window).on("scroll",(function(){fixedHeader()}));

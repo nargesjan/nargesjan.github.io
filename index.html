@@ -1,0 +1,559 @@
+<!DOCTYPE html><html lang="fa"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css" id="main_style">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,800" rel="stylesheet">
+  <link href="css/materialdesignicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <title>UpdraftPlus - افزونه بکاپ وردپرس</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+<!--Switcher-->
+<div class="style-switcher">
+  <div class="style-switcher__list">
+    <a class="style-switcher__link style-switcher__link--red active" href="assets/css/red.css"></a>
+    <a class="style-switcher__link style-switcher__link--blue" href="assets/css/blue.css"></a>
+    <a class="style-switcher__link style-switcher__link--violet" href="assets/css/violet.css"></a>
+    <a class="style-switcher__link style-switcher__link--green" href="assets/css/green.css"></a> <br>
+    <a class="style-switcher__link style-switcher__link--red-gradient" href="assets/css/red-gradient.css"></a>
+    <a class="style-switcher__link style-switcher__link--blue-gradient" href="assets/css/blue-gradient.css"></a>
+    <a class="style-switcher__link style-switcher__link--violet-gradient" href="assets/css/violet-gradient.css"></a>
+    <a class="style-switcher__link style-switcher__link--green-gradient" href="assets/css/green-gradient.css"></a>
+  </div>
+</div>
+<!--Switcher-->
+
+
+<!--Main menu-->
+<div class="menu">
+  <div class="container menu__wrapper">
+    <div class="row">
+      <div class="menu__logo menu__item">
+        <a href="index.html">
+          <svg fill="#db6939" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 916 186" xml:space="preserve">
+<g id="udp-logo-text">
+<g>
+<path d="M214.17,38.15h18.01v63.53c0,13.27,8.66,20.81,21.92,20.81s22.06-7.54,22.06-20.95V38.15h18.01v63.53
+										c0,22.2-16.06,37.28-39.94,37.28c-24.02,0-40.07-15.08-40.07-37.28V38.15z M306.33,66.08h16.2v5.17c0,2.65-0.28,4.89-0.28,4.89
+										h0.28c0,0,6.14-11.73,22.9-11.73c19.27,0,31.56,15.22,31.56,37.28c0,22.62-13.82,37.28-32.53,37.28c-14.1,0-20.39-9.77-20.39-9.77
+										h-0.28c0,0,0.28,2.51,0.28,6.14v29.88h-17.73V66.08z M341.24,124.03c9.77,0,17.87-7.96,17.87-22.06
+										c0-13.54-7.26-22.34-17.73-22.34c-9.22,0-17.87,6.7-17.87,22.48C323.5,113.14,329.51,124.03,341.24,124.03z M416.22,64.41
+										c15.64,0,20.53,9.08,20.53,9.08h0.28c0,0-0.14-1.81-0.14-4.05V38.15h17.73v99.14h-16.76v-5.86c0-2.65,0.28-4.61,0.28-4.61h-0.28
+										c0,0-6,12.15-22.34,12.15c-19.27,0-31.56-15.22-31.56-37.28C383.97,79.07,397.37,64.41,416.22,64.41z M419.57,124.03
+										c9.22,0,17.87-6.7,17.87-22.48c0-11.03-5.86-21.92-17.73-21.92c-9.77,0-17.87,7.96-17.87,22.06
+										C401.84,115.23,409.1,124.03,419.57,124.03z M468.58,66.08h17.04v12.29c0,2.65-0.28,5.03-0.28,5.03h0.28
+										c3.21-10.19,11.73-18.29,22.62-18.29c1.68,0,3.21,0.28,3.21,0.28v17.45c0,0-1.82-0.28-4.19-0.28c-7.54,0-16.06,4.33-19.41,14.94
+										c-1.12,3.49-1.54,7.4-1.54,11.59v28.21h-17.73V66.08z M556.83,92.61h2.37v-0.98c0-9.36-5.87-12.57-13.68-12.57
+										c-10.19,0-19.55,6.84-19.55,6.84l-6.7-12.71c0,0,11.03-8.8,27.93-8.8c18.71,0,29.6,10.33,29.6,28.35v44.54h-16.34v-5.86
+										c0-2.79,0.28-5.03,0.28-5.03h-0.28c0.14,0-5.45,12.57-21.64,12.57c-12.71,0-24.16-7.96-24.16-22.2
+										C514.67,94.15,545.24,92.61,556.83,92.61z M543.29,125.15c9.36,0,16.06-10.05,16.06-18.71v-1.67h-3.07
+										c-9.08,0-23.74,1.26-23.74,11.17C532.54,120.68,536.03,125.15,543.29,125.15z M592.86,81.3h-8.8V67.2h8.8v-3.21
+										c0-23.32,19.13-26.39,29.04-26.39c3.63,0,6,0.42,6,0.42V53.1c0,0-1.54-0.28-3.63-0.28c-5.03,0-13.68,1.26-13.68,11.59v2.79h15.22
+										v14.1H610.6v55.99h-17.73V81.3z M635.17,81.3h-9.22V67.2h9.63V46.67h17.31V67.2h16.2v14.1h-16.2v27.65
+										c0,11.73,9.22,13.41,14.1,13.41c1.96,0,3.21-0.28,3.21-0.28v15.5c0,0-2.09,0.42-5.45,0.42c-9.91,0-29.6-2.93-29.6-26.81V81.3z
+										M684.46,39.55h32.12c17.04,0,29.74,10.75,29.74,28.49c0,17.73-12.71,28.76-29.74,28.76h-26.11v40.49h-6V39.55z M716.3,91.21
+										c14.24,0,23.74-8.52,23.74-23.18c0-14.66-9.5-22.9-23.74-22.9h-25.83v46.08H716.3z M760.84,39.55h5.86v81.83
+										c0,9.77,5.03,10.89,8.24,10.89c1.12,0,2.09-0.14,2.09-0.14v5.45c0,0-1.26,0.28-2.51,0.28c-4.05,0-13.68-1.54-13.68-14.66V39.55z
+										M789.89,67.48h5.86v42.17c0,12.15,1.54,23.6,17.17,23.6c17.45,0,28.62-15.36,28.62-31.7V67.48h5.86v69.82h-5.86v-12.29
+										c0-3.21,0.56-5.72,0.56-5.72h-0.28c-2.37,6.56-12.01,19.69-28.9,19.69c-17.17,0-23.04-9.5-23.04-27.23V67.48z M866.96,124.45
+										c0,0,7.82,8.8,21.64,8.8c8.52,0,16.06-4.47,16.06-13.12c0-17.73-38.4-12.71-38.4-35.47c0-12.43,10.47-18.85,22.34-18.85
+										c14.24,0,20.67,7.54,20.67,7.54l-3.49,4.75c0,0-5.73-6.56-17.59-6.56c-7.96,0-15.78,3.63-15.78,12.71
+										c0,18.15,38.4,12.71,38.4,35.89c0,11.17-9.5,18.85-22.34,18.85c-16.9,0-25.27-10.05-25.27-10.05L866.96,124.45z"></path>
+</g>
+</g>
+            <path id="udp-logo-icon" d="M54.59,13.72L54.59,13.72c-0.07,0.04-0.14,0.07-0.22,0.1C54.37,13.82,54.56,13.73,54.59,13.72z M93.31,4.74
+								c-10.72,0-20.99,1.93-30.49,5.44l-0.01-0.02c-2.87,1.06-5.52,2.2-8.23,3.55c2.82-1.32,5,1.58,5.15,6.59v72.56
+								c0,18.54,15.03,33.57,33.57,33.57c18.54,0,33.57-15.03,33.57-33.57V57.53h-10.35l23.26-27.99l0.44-0.52l0.25-0.31l23.95,28.82
+								h-10.36v32.11c0.05,1.07,0.09,2.15,0.09,3.24c0,33.61-27.25,60.85-60.85,60.85c-33.61,0-60.85-27.24-60.85-60.85
+								c0-0.98,0.03-1.95,0.08-2.92V40.67c0-7.15-3.51-7.76-4.67-6.75c0,0-0.04,0.03-0.04,0.03C13.76,49.56,5.18,70.2,5.18,92.87
+								c0,48.67,39.46,88.13,88.13,88.13c48.67,0,88.13-39.46,88.13-88.13C181.44,44.2,141.98,4.74,93.31,4.74z"></path>
+</svg>
+
+        </a>
+      </div>
+      <div class="menu__item">
+        <nav class="menu__right-nav d-l-none">
+          <ul>
+            <li><a href="https://www.rtl-theme.com/updraftplus-wordpress-plugin/" class="site-btn site-btn--accent">همین الان خرید کنید 😍</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Main menu-->
+
+<!--Mobile menu-->
+<div class="mobile-menu d-none d-t-block">
+  <div class="container">
+    <div class="mobile-menu__logo">
+      <svg class="menu__logo-img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+        <path data-name="Sigma symbol" class="svg-element" d="M237.418,8583.56a12.688,12.688,0,0,0,.419-3.37c-0.036-5.24-2.691-9.68-7.024-13.2h-3.878a20.819,20.819,0,0,1,4.478,13.01c0,4.56-2.456,10.2-6.413,11.4a16.779,16.779,0,0,1-2.236.51c-10.005,1.55-14.109-17.54-9.489-23.31,2.569-3.21,6.206-4.08,11.525-4.08h17.935A24.22,24.22,0,0,1,237.418,8583.56Zm-12.145-24.45c-8.571.02-12.338,0.98-16.061,4.84-6.267,6.49-6.462,20.69,4.754,27.72a24.092,24.092,0,1,1,27.3-32.57h-16v0.01Z" transform="translate(-195 -8544)"></path>
+      </svg>
+    </div>
+    <button type="button" class="mobile-menu__close">
+      <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+    </button>
+    <nav class="mobile-menu__wrapper">
+      <ul class="mobile-menu__ul">
+        <li class="mobile-menu__li mobile-menu__li-collapse"><a class="link link--dark-gray">خانه
+          <span><i class="mdi mdi-chevron-down"></i></span>
+        </a></li>
+        <li class="mobile-menu__ul--collapsed">
+          <ul class="mobile-menu__ul">
+            <li class="mobile-menu__li"><a class="link link--gray" href="">اپلیکیشن موبایل
+              </a>
+            </li>
+            <li class="mobile-menu__li"><a class="link link--gray " href="02_messenger.html">پیامرسان</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray link--gray-active" href="03_webapp.html">اپلیکیشن تحت وب</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="04_desktop.html">اپلیکیشن دسکتاپ</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__li"><a href="05_features.html" class="link link--dark-gray">ویژگی ها</a></li>
+        <li class="mobile-menu__li"><a href="06_pricing.html" class="link link--dark-gray">قیمت گذاری و تعرفه ها</a></li>
+        <li class="mobile-menu__li"><a href="https://www.rtl-theme.com/updraftplus-wordpress-plugin/" class="site-btn site-btn--accent">شروع کنید</a></li>
+        <li class="mobile-menu__li mobile-menu__li-collapse"><a class="link link--dark-gray">Fa
+          <span><i class="mdi mdi-chevron-down"></i></span></a></li>
+        <li class="mobile-menu__ul--collapsed">
+          <ul class="mobile-menu__ul">
+            <li class="mobile-menu__li"><a href="" class="link link--gray link--gray-active">Fa</a></li>
+            <li class="mobile-menu__li"><a href="" class="link link--gray">Fr</a></li>
+            <li class="mobile-menu__li"><a href="" class="link link--gray">En</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!--Mobile menu-->
+
+
+<!--Header-->
+<header class="header-home header-home--color">
+  <div class="container">
+    <div class="row header-home__webapp-img-wrap" style="overflow: hidden;">
+      <div class="col-12 header-landing">
+        <h2 class="header-home__title">سایت خود را بیمه کنید !!</h2>
+        <p class="header-home__description">اولین و مهمترین گام در مدیریت یک سایت پشتیبان گیری از اطلاعات ارزشمند سایت میباشد که آپدرفت بهترین انتخاب برای پشتیبان گیری از سایت شماست.</p>
+        <div class="header-home__btns header-home__btns-messenger">
+          <a href="https://www.rtl-theme.com/updraftplus-wordpress-plugin/" class="site-btn site-btn--accent header-home__btn"> خرید افزونه </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--Header-->
+
+<!--Trusted by-->
+<div class="section section--first">
+  <div class="container">
+    <div class="row logo">
+      <div class="col-12">
+        <div class="logo__row">
+          <h3>بیش از 3 میلون نصب فعال افزونه(محبوب ترین افزونه ی بکاپ گیری خارجی)</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Trusted by-->
+
+<!--Features-->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section__title">تنها افزونه ای که میتوانید با اطمینان کامل از کارکرد فوق العادش لذت ببرید</h3>
+        <p class="section__description"> به راحتی تنها با یک کلیک از تمامی یا قسمتی از سایتتان بکاپ تهیه کنید و آن را داخل هاست ویا سرورهایی که در اختیار شما قرار میدهد ذخیره کنید. </p>
+      </div>
+    </div>
+    <div class="row carousel">
+      <div class="col-12">
+        <div class="carousel__navigation">
+          <ul id="carousel__navigation-feature-slider" class="carousel__navigation-items" role="tablist">
+            <li class="carousel__navigation-item" role="presentation" tabindex="1">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+                <rect class="svg-bg" width="120" height="120"></rect>
+                <path class="svg-light-gray" d="M36,6H48a2,2,0,0,1,0,4H36A2,2,0,0,1,36,6Zm6-6a2,2,0,0,1,2,2V14a2,2,0,0,1-4,0V2A2,2,0,0,1,42,0ZM16,110H28a2,2,0,0,1,0,4H16A2,2,0,0,1,16,110Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V106A2,2,0,0,1,22,104Zm70-6h12a2,2,0,0,1,0,4H92A2,2,0,0,1,92,98Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,98,92ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"></path>
+                <g id="speed">
+                  <path id="scale" class="svg-dark-gray" d="M60,31h0A33,33,0,0,1,93,64v2.818A3.182,3.182,0,0,1,89.818,70H30.182A3.182,3.182,0,0,1,27,66.818V64A33,33,0,0,1,60,31Z"></path>
+                  <path id="max" class="svg-element" d="M83.671,41.019A32.883,32.883,0,0,1,93,64v2.818A3.182,3.182,0,0,1,89.818,70H60V64.69Z"></path>
+                  <circle class="svg-gray" cx="60" cy="64" r="25"></circle>
+                  <image id="arrow" x="53" y="57" width="30" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAOCAMAAAAPOFwLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABdYQRBAAAAKXRSTlMAFIbS+NCCU/Dx/hX1waOHbE4yFtzAaxOS9ti8oYNnTC4QaFTy0/r0zpnURg4AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAgUlEQVQY05WRUQ6CMBBEBylgK4JQFEQqqKjs/S9IEGIa3TTh/b5kM7MDAN7GFyIIPbBEW/ogI9YqWlCM30n6Eu+T9JDl2tIh/SOKY5KesrwEAnJQQbh07NSqYo+f60tjrm13+4nmN+bedqWVXFvFpF77FuDRz7Zn7TTJ8/UeDDfJCDOoIidStO0EAAAAAElFTkSuQmCC"></image>
+                </g>
+              </svg>
+              <p> سریع و آسان </p>
+
+            </li>
+            <li class="carousel__navigation-item" role="presentation" tabindex="2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+                <rect class="svg-bg" width="120" height="120"></rect>
+                <path class="svg-light-gray" d="M112,36a2,2,0,0,1,2,2V50a2,2,0,0,1-4,0V38A2,2,0,0,1,112,36Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,42ZM8,8a2,2,0,0,1,2,2V22a2,2,0,0,1-4,0V10A2,2,0,0,1,8,8ZM2,14H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,14ZM20,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,20,92Zm-6,6H26a2,2,0,0,1,0,4H14A2,2,0,0,1,14,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"></path>
+                <g id="shield">
+                  <path id="shield_light" class="svg-light" d="M60.752,81.9A2.866,2.866,0,0,1,60,82V16a1.975,1.975,0,0,1,1.18.393c3.37,2.5,13.594,9.343,26.121,10.54A3,3,0,0,1,89.993,29.9C90.138,39.995,88.551,74.278,60.752,81.9Z"></path>
+                  <path id="shield_dark" class="svg-gray" d="M59.248,81.9A2.867,2.867,0,0,0,60,82V16a1.975,1.975,0,0,0-1.18.393c-3.37,2.5-13.594,9.343-26.121,10.54A3,3,0,0,0,30.007,29.9C29.862,39.995,31.449,74.278,59.248,81.9Z"></path>
+                </g>
+                <g id="lock">
+                  <path id="lock-2" data-name="lock" class="svg-element" d="M70,75.25H88a4,4,0,0,1,4,4V92a4,4,0,0,1-4,4H70a4,4,0,0,1-4-4V79.25A4,4,0,0,1,70,75.25Zm13.522,0v-4.61c0-2.864-1.712-5.186-4.522-5.186s-4.522,2.322-4.522,5.186v4.61H71.087V68.915A6.85,6.85,0,0,1,77.87,62H80.13a6.85,6.85,0,0,1,6.783,6.915v6.339H83.522Z"></path>
+                  <path id="hole" class="svg-white" d="M79,78.75A3.453,3.453,0,1,1,75.594,82.2,3.43,3.43,0,0,1,79,78.75ZM77.3,82.17H80.7l1.13,8.068H76.174Z"></path>
+                </g>
+              </svg>
+              <p>اورجینال</p>
+            </li>
+            <li class="carousel__navigation-item" role="presentation" tabindex="3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+                <rect class="svg-bg" width="120" height="120"></rect>
+                <path class="svg-light-gray" d="M90,110h12a2,2,0,0,1,0,4H90A2,2,0,0,1,90,110Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V106A2,2,0,0,1,96,104ZM92,8h12a2,2,0,0,1,0,4H92A2,2,0,0,1,92,8Zm6-6a2,2,0,0,1,2,2V16a2,2,0,0,1-4,0V4A2,2,0,0,1,98,2ZM16,20H28a2,2,0,0,1,0,4H16A2,2,0,0,1,16,20Zm6-6a2,2,0,0,1,2,2V28a2,2,0,0,1-4,0V16A2,2,0,0,1,22,14Zm38,6A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"></path>
+                <g>
+                  <rect id="Прямоугольник_скругл._углы_2_копия_2" data-name="Прямоугольник, скругл. углы 2 копия 2" class="svg-dark-gray" x="38" y="20" width="44" height="80" rx="4" ry="4"></rect>
+                  <path id="Эллипс_2_копия" data-name="Эллипс 2 копия" class="svg-white" d="M42,30H78a2,2,0,0,1,2,2V86a2,2,0,0,1-2,2H42a2,2,0,0,1-2-2V32A2,2,0,0,1,42,30ZM60.5,91.25a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,60.5,91.25Z"></path>
+                </g>
+                <g id="UI">
+                  <rect id="image" class="svg-light-gray" x="44" y="34" width="32" height="14" rx="2" ry="2"></rect>
+                  <path id="text" class="svg-light" d="M46,52h4a2,2,0,0,1,0,4H46A2,2,0,0,1,46,52Zm0,8h4a2,2,0,0,1,0,4H46A2,2,0,0,1,46,60Z"></path>
+                  <path id="text-2" data-name="text" class="svg-gray" d="M56,52H74a2,2,0,0,1,0,4H56A2,2,0,0,1,56,52Zm0,8H74a2,2,0,0,1,0,4H56A2,2,0,0,1,56,60Z"></path>
+                  <path id="text-3" data-name="text" class="svg-dark-gray" d="M66,68h8a2,2,0,0,1,0,4H66A2,2,0,0,1,66,68Zm0,8h8a2,2,0,0,1,0,4H66A2,2,0,0,1,66,76Z"></path>
+                  <path id="text-4" data-name="text" class="svg-element" d="M52,68h8a2,2,0,0,1,0,4H52A2,2,0,0,1,52,68Zm0,8h8a2,2,0,0,1,0,4H52A2,2,0,0,1,52,76Z"></path>
+                </g>
+              </svg>
+              <p>بهینه و سبک</p>
+            </li>
+            <li class="carousel__navigation-item" role="presentation" tabindex="4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+                <rect class="svg-bg" width="120" height="120"></rect>
+                <path class="svg-light-gray" d="M112,20a2,2,0,0,1,2,2V34a2,2,0,0,1-4,0V22A2,2,0,0,1,112,20Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,26ZM8,16a2,2,0,0,1,2,2V30a2,2,0,0,1-4,0V18A2,2,0,0,1,8,16ZM2,22H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,22ZM20,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,20,92Zm-6,6H26a2,2,0,0,1,0,4H14A2,2,0,0,1,14,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"></path>
+                <g id="login">
+                  <rect class="svg-element" x="51" y="84" width="18" height="6" rx="3" ry="3"></rect>
+                  <path id="input" class="svg-gray" d="M41,72H79a3,3,0,0,1,0,6H41A3,3,0,0,1,41,72Zm0-10H79a3,3,0,0,1,0,6H41A3,3,0,0,1,41,62Z"></path>
+                  <path id="user" class="svg-dark-gray" d="M60,32a5,5,0,1,1-5,5A5,5,0,0,1,60,32ZM58,42h4a7,7,0,0,1,7,7v3H51V49A7,7,0,0,1,58,42Z"></path>
+                </g>
+              </svg>
+              <p>دسترسی سریع</p>
+            </li>
+            <li class="carousel__navigation-item" role="presentation" tabindex="5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+                <rect class="svg-bg" width="120" height="120"></rect>
+                <path class="svg-light-gray" d="M8,72a2,2,0,0,1,2,2V86a2,2,0,0,1-4,0V74A2,2,0,0,1,8,72ZM2,78H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,78ZM112,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,112,92Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,98Zm-6-82a2,2,0,0,1,2,2V30a2,2,0,0,1-4,0V18A2,2,0,0,1,100,16Zm-6,6h12a2,2,0,0,1,0,4H94A2,2,0,0,1,94,22ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"></path>
+                <path id="headphones" class="svg-dark-gray" d="M83,71a4,4,0,0,1-4-4V59h0a19,19,0,0,0-38,0V71a8,8,0,0,0,8,8h5.779A2.981,2.981,0,0,1,57,78h6a3,3,0,0,1,0,6H57a2.981,2.981,0,0,1-2.221-1H47A10,10,0,0,1,37,73V71a4,4,0,0,1-4-4V61a4,4,0,0,1,4-4h0.1a22.985,22.985,0,0,1,45.8,0H83a4,4,0,0,1,4,4v6A4,4,0,0,1,83,71Z"></path>
+                <text id="_24h" data-name="24h" class="svg-element svg-text" x="60.5" y="65.25">24h</text>
+              </svg>
+              <p>پشتیبانی 24 ساعته</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="slider slider-img slider-img--big" id="feature-slider">
+          <div class="carousel__slide">
+            <div class="carousel__slide-img">
+              <img alt="" src="images/Screenshot_1.png">
+            </div>
+            <div class="carousel__slide-content">
+              <h4 class="carousel__slide-title">سرور ذخیره ساز (ریبوت ) خود را انتخاب کنید</h4>
+              <p class="carousel__slide-description">
+                اگر انتخاب کنید که ذخیره‌سازی از راه دور وجود نداشته باشد، پشتیبان‌گیری‌ها روی سرور وب باقی می‌مانند. این توصیه نمی شود (مگر اینکه قصد دارید آنها را به صورت دستی در رایانه خود کپی کنید)، زیرا از دست دادن وب سرور به معنای از دست دادن وب سایت و نسخه های پشتیبان در یک رویداد است.
+                </p>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__slide-img">
+              <img alt="" src="images/Screenshot_2.png">
+            </div>
+            <div class="carousel__slide-content">
+              <h4 class="carousel__slide-title">از چه فایل هایی پشتیبان گرفته می شود؟</h4>
+              <p class="carousel__slide-description">
+                تمامی افزونه ها قالب و آپلود ها
+                </p>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__slide-img">
+              <img alt="" src="images/Screenshot_3.png">
+            </div>
+            <div class="carousel__slide-content">
+              <h4 class="carousel__slide-title">  رمزگذاری پایگاه داده و پشتیبان‌گیری از پایگاه‌داده‌های بیشتر </h4>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__slide-img">
+              <img alt="" src="images/Screenshot_4.png">
+            </div>
+            <div class="carousel__slide-content">
+              <h4 class="carousel__slide-title"> پشتیبان گیری از فایل ها و پایگاه داده </h4>
+              <p class="carousel__slide-description">
+                  تنظیم تعداد پشتیبان گیری و وضعیت پشتیبان گیری (اتوماتیک /دستی ) با اضافه کردن شرط در آپدرفت پلاس قابل انجام است.
+                </p>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__slide-img">
+              <img alt="" src="images/Screenshot_5.png">
+            </div>
+            <div class="carousel__slide-content">
+              <h4 class="carousel__slide-title"> قفل کردن دسترسی به صفحه ی تنظیمات UpdraftPlus </h4>
+              <p class="carousel__slide-description">
+                شما میتوانید دسترسی دیگر نمایندگان را به تنظیمات این افزونه ی حساس قفل کنید تا فقط مدیر وب سایت بتواند روی بکاپ گیری ،حذف و ...کنترل داشته باشد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+    <hr>
+  </div>
+</section>
+<!--Features-->
+
+<!--What is-->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section__title">آپدرفت چیست؟؟</h3>
+        <p class="section__description">قبل از اینکه بروزرسانی بر روی افزونه ها، قالب ها و یا پایگاه داده ها انجام شود، افزونه updraftplus یک بکاپ کلی از سایت شما تهیه میکند تا در صورت بروز مشکل هنگام بروزرسانی سایت شما از بین نرود علاوه بر این افزونه آپدرفت پلاس تمامی نسخه های پشتیبان موجود، چه در هاست و چه در سرور ها را در یک صفحه در اختیار شما قرار میدهد
+        </p>
+      </div>
+    </div>
+    <div class="row about-app">
+      <div class="col-6 about-app__description">
+        <div class="about-app__description-content about-app__description-content--left">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" fill="#db6939" height="48px" width="48px" id="XMLID_218_" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="update">
+	<g>
+		<path fill="#db6939" d="M12,24c-4.1,0-7.8-2-10-5.4V24H0v-9h9v2H3.3c1.8,3.1,5,5,8.7,5c5.5,0,10-4.5,10-10h2C24,18.6,18.6,24,12,24z M2,12H0    C0,5.4,5.4,0,12,0c4.1,0,7.8,2,10,5.4V0h2v9h-9V7h5.7c-1.8-3.1-5-5-8.7-5C6.5,2,2,6.5,2,12z"></path>
+	</g>
+</g>
+</svg>
+          <h4 class="about-app__description-title">پشتیبان گیری اتوماتیک(زمان بندی شده)</h4>
+          <p>
+            شما میتوانید با تایم دادن به افزونه UpdraftPlus Premium، برای افزونه تعیین کنید که بکاپ گیری از چه زمانی شروع شود و چند وقت یکبار این کار را انجام دهد.
+          </p>
+        </div>
+      </div>
+      <div class="col-6 about-app__img">
+        <div class="about-app__img-wrap">
+          <img alt="" src="images/Screenshot_6.png">
+        </div>
+      </div>
+    </div>
+    <div class="row about-app about-app--reverse">
+      <div class="col-6 about-app__description">
+        <div class="about-app__description-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" fill="#db6939">
+                <path fill="#db6939" clip-rule="evenodd" d="M13.5 3C13.2239 3 13 3.22386 13 3.5V12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12V5.5C11 5.22386 10.7761 5 10.5 5C10.2239 5 9.99999 5.22386 9.99999 5.5V13.9677C9.99999 15.0757 8.62655 15.5918 7.8969 14.7579L5.34951 11.8466C5.19167 11.6662 4.95459 11.576 4.71675 11.6057C4.15329 11.6761 3.88804 12.3395 4.24762 12.779L8.93807 18.5118C10.2266 20.0867 12.154 21 14.1888 21C17.3982 21 20 18.3982 20 15.1888V7.5C20 7.22386 19.7761 7 19.5 7C19.2239 7 19 7.22386 19 7.5V12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12V5.5C17 5.22386 16.7761 5 16.5 5C16.2239 5 16 5.22386 16 5.5V12C16 12.5523 15.5523 13 15 13C14.4477 13 14 12.5523 14 12V3.5C14 3.22386 13.7761 3 13.5 3ZM15.9611 3.05823C15.7525 1.88823 14.73 1 13.5 1C12.27 1 11.2475 1.88823 11.0389 3.05823C10.8653 3.0201 10.685 3 10.5 3C9.11928 3 7.99999 4.11929 7.99999 5.5V11.8386L6.85467 10.5296C6.2595 9.84942 5.36551 9.50903 4.46868 9.62113C2.34401 9.88672 1.34381 12.3883 2.6997 14.0455L7.39016 19.7783C9.05854 21.8174 11.5541 23 14.1888 23C18.5028 23 22 19.5028 22 15.1888V7.5C22 6.11929 20.8807 5 19.5 5C19.315 5 19.1347 5.0201 18.9611 5.05823C18.7525 3.88823 17.73 3 16.5 3C16.315 3 16.1347 3.0201 15.9611 3.05823Z"></path>
+            </svg>
+          <h4 class="about-app__description-title">پشتیبان گیری دستی</h4>
+          <p>
+            به راحتی تنها با یک کلیک از تمامی یا قسمتی از سایتتان بکاپ تهیه کنید و آن را داخل هاست ویا سرورهایی که در اختیار شما قرار میدهد ذخیره کنید.
+          </p>
+          <a href="https://www.rtl-theme.com/updraftplus-wordpress-plugin/" class="site-btn site-btn--accent about-app__btn">خرید افزونه</a>
+        </div>
+      </div>
+      <div class="col-6 about-app__img about-app__img--right">
+        <div class="about-app__img-wrap">
+          <img alt="" src="images/Screenshot_8.png">
+        </div>
+      </div>
+    </div>
+    <div class="row about-app">
+      <div class="col-6 about-app__description">
+        <div class="about-app__description-content about-app__description-content--left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" fill="#db6939;">
+                <path d="M22 11.7979V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7713 22 14 22H10C6.22878 22 4.34315 22 3.17157 20.8284C2.19725 19.8541 2.03321 18.3859 2.00559 15.7501H10.6937L8.43392 17.3935C8.09893 17.6371 8.02487 18.1062 8.26849 18.4412C8.51212 18.7762 8.98118 18.8502 9.31617 18.6066L13.4412 15.6066C13.6352 15.4655 13.75 15.24 13.75 15.0001C13.75 14.7601 13.6352 14.5346 13.4412 14.3935L9.31617 11.3935C8.98118 11.1499 8.51212 11.2239 8.26849 11.5589C8.02487 11.8939 8.09893 12.363 8.43392 12.6066L10.6937 14.2501H2.00001L2 14L2.00003 6.94975C2.00003 6.06725 2.00003 5.62594 2.06938 5.25839C2.37467 3.64031 3.64033 2.37464 5.25841 2.06935C5.62597 2 6.06724 2 6.94977 2C7.33644 2 7.52978 2 7.71559 2.01738C8.51667 2.09229 9.27654 2.40704 9.89596 2.92051C10.0396 3.03961 10.1763 3.17633 10.4498 3.44975L11 4C11.8158 4.81578 12.2237 5.22367 12.7121 5.49543C12.9805 5.64471 13.2651 5.7626 13.5604 5.84678C14.0979 6 14.6748 6 15.8284 6H16.2021C18.8345 6 20.1507 6 21.0062 6.76946C21.0849 6.84024 21.1598 6.91514 21.2306 6.99383C22 7.84935 22 9.16554 22 11.7979Z" fill="#db6939"></path>
+            </svg>
+            <h4 class="about-app__description-title">انتقال سایت</h4>
+          <p>
+            افزونه بکاپ خودکار وردپرس این امکان را به شما می دهد تا به راحتی سایتتان یا محتوای سایتتان را از دامنه ای به دامنه ی دیگر بفرستید. اگر فردی بخواهد از اطلاعات  موجود در یک سایتش در سایت دیگرش هم استفاده کند یا کلا دامنه را عوض کند بسیار کاربردی است.
+          </p>
+        </div>
+      </div>
+      <div class="col-6 about-app__img">
+        <div class="about-app__img-wrap">
+          <img alt="" src="images/Screenshot_9.png">
+        </div>
+      </div>
+    </div>
+    <div class="row about-app about-app--reverse">
+      <div class="col-6 about-app__description">
+        <div class="about-app__description-content">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Uploaded to svgrepo.com" width="48px" height="48px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.feather_een{fill:#db6939;}
+</style>
+                <path class="feather_een" fill="#db6939" d="M16,2C8.268,2,2,8.268,2,16s6.268,14,14,14s14-6.268,14-14S23.732,2,16,2z M16,3  c6.831,0,12.435,5.299,12.949,12H16V3z M16,29C8.832,29,3,23.168,3,16C3,9.169,8.299,3.565,15,3.051v12.691  c0,0.176,0.046,0.348,0.134,0.5l6.59,11.413C19.994,28.508,18.056,29,16,29z M22.603,27.179l-5.967-10.336l8.444,8.444  C24.336,26.014,23.502,26.645,22.603,27.179z M25.763,24.556L17.207,16H29C29,19.277,27.771,22.267,25.763,24.556z"></path>
+</svg>
+            <h4 class="about-app__description-title">تقسیم بندی فایل بکاپ</h4>
+          <p>
+            می توانید یک حداکثر حجم برای فایل های بکاپتان در نظر بگیرید، در صورت تعیین اگر حجم فایل بکاپ بیشتر از حجم انتخابی شد، افزونه بکاپ اتوماتیک وردپرس فایل بکاپ را به چند فایل با حداکثر حجمی که شما تعیین کرده اید تقسیم می کند. اگر وب سرور شما محدودیت حافظه ای شدیدی دارد، این مورد می تواند بسیار پرکاربرد باشد.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-6 about-app__img about-app__img--left">
+        <div class="about-app__img-wrap">
+          <img alt="" src="images/Screenshot_10.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row about-app">
+      <div class="col-6 about-app__description">
+        <div class="about-app__description-content about-app__description-content--left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" fill="#db6939">
+                <path fill="#db6939" d="M20.9098 11.1203V6.73031C20.9098 5.91031 20.2898 4.98031 19.5198 4.67031L13.9498 2.39031C12.6998 1.88031 11.2898 1.88031 10.0398 2.39031L4.46984 4.67031C3.70984 4.98031 3.08984 5.91031 3.08984 6.73031V11.1203C3.08984 16.0103 6.63984 20.5903 11.4898 21.9303C11.8198 22.0203 12.1798 22.0203 12.5098 21.9303C17.3598 20.5903 20.9098 16.0103 20.9098 11.1203ZM12.7498 12.8703V15.5003C12.7498 15.9103 12.4098 16.2503 11.9998 16.2503C11.5898 16.2503 11.2498 15.9103 11.2498 15.5003V12.8703C10.2398 12.5503 9.49984 11.6103 9.49984 10.5003C9.49984 9.12031 10.6198 8.00031 11.9998 8.00031C13.3798 8.00031 14.4998 9.12031 14.4998 10.5003C14.4998 11.6203 13.7598 12.5503 12.7498 12.8703Z"></path>
+            </svg>
+          <h4 class="about-app__description-title">قفل تنظیمات افزونه بکاپ خودکار وردپرس</h4>
+          <p>
+            بر روی تنظیمات افزونه UpdraftPlus رمز قرار دهید تا کسی به غیر از شما نتواند به تنظیمات updraftplus شما دسترسی داشته باشد. همچنین در این قسمت می توانید یک ایمیل نیز قرار دهید، که اگر کسی وارد تنظیمات افزونه انتقال سایت وردپرس شد، متنی با محتوای “در صورت لزوم به ایمیل ….. پیام بدهید.”  به او نمایش داده شود.
+          </p>
+        </div>
+      </div>
+      <div class="col-6 about-app__img">
+        <div class="about-app__img-wrap">
+          <img alt="" src="images/Screenshot_5.png">
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</section>
+<!--What is-->
+
+
+<!--Testimonials-->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section__title">نظر کاربران در مورد آپدرفت پلاس</h3>
+      </div>
+    </div>
+    <div class="row carousel">
+      <div class="col-12">
+        <div class="slider carousel__slider--think">
+          <div class="carousel__slide-wrap">
+            <div class="carousel__slide">
+              <div class="carousel__slide-avatar">
+                <img alt="" class="carousel__slide-avatar-img" src="images/YACHTZOO_Logo_Black-300x300.jpg">
+                <p class="carousel__slide-avatar-name">Earid A.</p>
+                <p class="carousel__slide-avatar-work">طراح سایت</p>
+              </div>
+              <div class="carousel__slide-quote">
+                <h4 class="carousel__slide-quote-title"> کارآمد</h4>
+                <p class="carousel__slide-quote-description">“
+                  این افزونه به راحتی به یک سایت وردپرسی اجازه می دهد تا یک نسخه پشتیبان را در فضای ذخیره سازی راه دور مانند Google Drive برنامه ریزی کند. هنگامی که به آن نیاز دارید، به همان حافظه راه دور اجازه می دهد تا به طور یکپارچه بازیابی شود. UpdraftPlus اغلب به روز و بهبود می یابد. من هرگز مشکلی نداشتم و این افزونه را برای همه نسخه های پشتیبان وردپرس توصیه می کنم.
+                  “</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel__slide-wrap">
+            <div class="carousel__slide">
+              <div class="carousel__slide-avatar">
+                <img alt="" class="carousel__slide-avatar-img" src="images/219e398-300x300.jpg">
+                <p class="carousel__slide-avatar-name">Pablo Postigo</p>
+                <p class="carousel__slide-avatar-work">طراح سایت</p>
+              </div>
+              <div class="carousel__slide-quote">
+                <h4 class="carousel__slide-quote-title">با کیفیت و سریع</h4>
+                <p class="carousel__slide-quote-description">“
+                  من هیچ نرم افزار پشتیبان بهتری برای نصب وردپرس شما نمی شناسم. برای بیش از 20 وب سایت استفاده می شود و هرگز من را شکست نمی دهد، با ویژگی های عالی مانند پشتیبان گیری روزانه از پایگاه داده و پشتیبان گیری هفتگی از فایل ها. امکان انتقال همه چیز به ذخیره سازی از راه دور به عنوان دراپ باکس و غیره. فقط بهترین و ساده ترین پلاگین موجود و نجات دهنده در صورت نیاز!!!
+                  “</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__slide-wrap">
+            <div class="carousel__slide">
+              <div class="carousel__slide-avatar">
+                <img alt="" class="carousel__slide-avatar-img" src="images/185fb035601ff378ce788f18dcfb0088.jpeg">
+                <p class="carousel__slide-avatar-name">Gustavo Cieslar</p>
+                <p class="carousel__slide-avatar-work">طراح سایت</p>
+              </div>
+              <div class="carousel__slide-quote">
+                <h4 class="carousel__slide-quote-title">پشتیبانی حرفه ای</h4>
+                <p class="carousel__slide-quote-description">“
+                  کمتر از 2 دقیقه طول کشید تا افزونه را به حساب آمازون S3 خود متصل کنم. همه چیز بهتر از حد انتظار کار می کند! با تشکر برای چنین ابزار عالی!
+                  “</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__slide-wrap">
+            <div class="carousel__slide">
+              <div class="carousel__slide-avatar">
+                <img alt="" class="carousel__slide-avatar-img" src="images/43fb404d20915d7152c62b74e682d8a3.jpeg">
+                <p class="carousel__slide-avatar-name">Jan Dembowski</p>
+                <p class="carousel__slide-avatar-work">طراح سایت</p>
+              </div>
+              <div class="carousel__slide-quote">
+                <h4 class="carousel__slide-quote-title">تسریع در عملکرد</h4>
+                <p class="carousel__slide-quote-description">“
+                  چه نسخه رایگان یا پریمیوم باشد، این یک افزونه واقعا عالی است! پشتیبان گیری من هرگز آسان تر نبوده است. متشکرم!
+                  “</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Testimonials-->
+<!--Download-->
+<section class="section section--last">
+  <div class="container download">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="download__title">آپدرفت پلاس را همین الان از راست چین تهیه کنید</h3>
+        <h3>همراه با آموزش کامل و جامع برای راحتی شما</h3>
+      </div>
+    </div>
+    <div class="row download__btns">
+
+      <div class="col-12" style="display: flex; justify-content: center;">
+        <a href="https://www.rtl-theme.com/updraftplus-wordpress-plugin/" class="site-btn site-btn--dark site-btn--download site-btn--left">
+          <img alt="" src="images/209573b750a6a31517fb4321b3219cc09ef396224856e1.png"></a>
+      </div>
+    </div>
+  </div>
+  <img alt="" class="section__img" src="images/img_backgroud_footer.png">
+</section>
+<!--Download-->
+
+
+<hr>
+
+
+
+<!--Footer-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>© 1401-1402 تمامی حقوق محفوظ است
+          <a href="https://www.rtl-theme.com/author/pargas/products/" class="link link--gray"> نرگس طاهریان </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-->
+
+<script src="js/jquery-2.2.4.min.js"></script>
+
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/pricing.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/dragscrollable.min.js"></script>
+<script src="js/device.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/style-switcher.js"></script>
+
+</body></html>

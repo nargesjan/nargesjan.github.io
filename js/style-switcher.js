@@ -1,0 +1,1 @@
+"use strict";$(".style-switcher__control").on("click",(function(){$(".style-switcher").toggleClass("style-switcher--active")})),$(".style-switcher__link").on("click",(function(t){t.preventDefault();let e=$(this).attr("href");$(".style-switcher__link").removeClass("active"),$(this).addClass("active"),$("link[id='main_style']").attr("href",e)}));
